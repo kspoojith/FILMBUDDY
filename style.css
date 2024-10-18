@@ -21,12 +21,22 @@
     text-align:center;
     font-family: "Roboto Condensed", Sans-serif;
     font-size:20px;
-    background-color:white;
+    background-color:red;
     padding-top:40px;
-    color:black;
+    color:white;
 }
 .video{
     text-align:center;
+}
+.showcard-span{
+    color:black;
+    background-color:white;
+    height:30px;
+    width:auto;
+    border-radius:10px;
+    font-size:15px;
+    font-weight:600;
+    padding:5px;
 }
 .show-section{
     text-align:center;
@@ -39,7 +49,14 @@
 .podcast-album{
     display:flex;
     flex-direction:row;
-    color:white
+    color:white;
+    
+}
+.blog-album{
+    display:flex;
+    flex-direction:row;
+    color:white;
+    background-color:red;
     
 }
 .card1{
@@ -78,7 +95,30 @@
     padding:10px;
     flex-grow:1;
 }
-
+.showcard1{
+    background-image:url('images/showcard1.jpg');
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+}
+.showcard2{
+    background-image:url('images/showcard2.jpg');
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+}
+.showcard3{
+    background-image:url('images/showcard3');
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+}
+.showcard4{
+    background-image:url('images/showcard4.jpg');
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+}
 .video-background {
     position: relative;
     height: 70vh; /* Full viewport height */
@@ -119,7 +159,8 @@
     flex-direction:column;
     justify-content:flex-end;
     padding:20px;
-    font-family: "Roboto Condensed", Sans-serif;
+    font-family: Garamond, serif;
+    font-style:italic;
     letter-spacing:1px;
     
     
@@ -140,4 +181,8 @@
 
 span{
     color:red;
+}
+.footer{
+    background-color:#555555;
+    color:white;
 }
