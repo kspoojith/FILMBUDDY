@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filmmaking Equipment Store</title>
+    <style>
+        /* General styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+        header {
+            background-color: #222;
+            color: #fff;
+            padding: 15px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+
+        /* Layout styling */
+        .main-container {
+            display: flex;
+            flex-wrap: nowrap;
+        }
+        
+        /* Sidebar styling */
+        .sidebar {
+            width: 200px;
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+            height: 100vh;
+        }
+        .sidebar h2 {
+            font-size: 20px;
+            color: #f0a500;
+            margin-bottom: 15px;
+        }
+        .sidebar ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .sidebar ul li {
+            margin: 10px 0;
+        }
+        .sidebar ul li a {
+            color: #ccc;
+            text-decoration: none;
+        }
+        .sidebar ul li a:hover {
+            color: #f0a500;
+        }
+
+        /* Product area styling */
+        .content {
+            flex: 1;
+            padding: 20px;
+        }
+        .search-bar {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        .search-bar input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+        }
+        .product-card {
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .product-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+        .product-title {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+        .product-price {
+            color: #28a745;
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+        .add-to-cart {
+            background-color: #28a745;
+            color: #fff;
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 10px;
+        }
+        .add-to-cart:hover {
+            background-color: #218838;
+        }
+
+        /* Footer styling */
+        footer {
+            background-color: #222;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Filmmaking Equipment Store</h1>
+    </header>
+
+    <div class="main-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <h2>Categories</h2>
+            <ul>
+                <li><a href="#">Cameras</a></li>
+                <li><a href="#">Lighting</a></li>
+                <li><a href="#">Audio Equipment</a></li>
+                <li><a href="#">Tripods</a></li>
+                <li><a href="#">Editing Software</a></li>
+            </ul>
+        </aside>
+
+        <!-- Main Content -->
+        <div class="content">
+            <!-- Search Bar -->
+            <div class="search-bar">
+                <input type="text" placeholder="Search for products...">
+            </div>
+            
+            <!-- Product Grid -->
+            <div class="product-grid">
+                <!-- Example Product 1 -->
+                <div class="product-card">
+                    <img src="camera.jpg" alt="Camera">
+                    <h2 class="product-title">4K Ultra HD Camera</h2>
+                    <p class="product-price">$1200</p>
+                    <a href="#" class="add-to-cart">Add to Cart</a>
+                </div>
+                
+                <!-- Example Product 2 -->
+                <div class="product-card">
+                    <img src="lighting-kit.jpg" alt="Lighting Kit">
+                    <h2 class="product-title">Professional Lighting Kit</h2>
+                    <p class="product-price">$550</p>
+                    <a href="#" class="add-to-cart">Add to Cart</a>
+                </div>
+
+                <!-- Example Product 3 -->
+                <div class="product-card">
+                    <img src="microphone.jpg" alt="Microphone">
+                    <h2 class="product-title">Directional Microphone</h2>
+                    <p class="product-price">$220</p>
+                    <a href="#" class="add-to-cart">Add to Cart</a>
+                </div>
+
+                <!-- Example Product 4 -->
+                <div class="product-card">
+                    <img src="tripod.jpg" alt="Tripod">
+                    <h2 class="product-title">Heavy-Duty Tripod</h2>
+                    <p class="product-price">$99</p>
+                    <a href="#" class="add-to-cart">Add to Cart</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Filmmaking Equipment Store. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
